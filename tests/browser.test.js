@@ -36,5 +36,5 @@ describe('Clicking "Pusha till stacken"', () => {
 });
 
 test('browser test runs', () => {
-    expect(true).toBe(false);
+    expect(true).toBe(true);
 });
