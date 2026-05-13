@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+test('stack returns values in reverse order', () => {
+    stack.push("röd");
+    stack.push("grön");
+    stack.push("blå");
+
+    expect(stack.pop()).toBe("blå");
+    expect(stack.pop()).toBe("grön");
+});
